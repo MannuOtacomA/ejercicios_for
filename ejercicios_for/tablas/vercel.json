@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/multiplicar.html" }
+    {
+      "source": "/",
+      "destination": "/ejercicios_for/ejercicios_for/tablas/multiplicar.html",
+      "permanent": true
+    }
   ]
 }
