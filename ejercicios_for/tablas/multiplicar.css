@@ -1,0 +1,160 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* ===== Encabezado ===== */
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.encabezado h1 {
+    color: #4a3f8c;
+    font-size: 1.8rem;
+}
+
+/* ===== Botón PROBAR ===== */
+.btn-probar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(76, 175, 80, 0.4);
+}
+
+.btn-probar:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-probar:active {
+    transform: translateY(0);
+}
+
+/* ===== Contenedor principal ===== */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* ===== Tabla ===== */
+.tabla-multiplicar {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-multiplicar thead {
+    background-color: #4a3f8c;
+    color: white;
+}
+
+.tabla-multiplicar th,
+.tabla-multiplicar td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tabla-multiplicar tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
+}
+
+.tabla-multiplicar tbody tr:nth-child(even) {
+    background-color: #f7f7fc;
+}
+
+.tabla-multiplicar tbody tr:hover {
+    background-color: #e8e4ff;
+}
+
+.tabla-multiplicar td:last-child {
+    font-weight: bold;
+    color: #4a3f8c;
+}
+
+/* ===== Pie de página ===== */
+.pie {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* ===== Diseño RESPONSIVE ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado h1 {
+        font-size: 1.5rem;
+    }
+
+    .tabla-multiplicar th,
+    .tabla-multiplicar td {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .encabezado {
+        padding: 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 1.3rem;
+    }
+
+    .btn-probar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tabla-multiplicar th,
+    .tabla-multiplicar td {
+        padding: 10px 6px;
+        font-size: 0.95rem;
+    }
+}
