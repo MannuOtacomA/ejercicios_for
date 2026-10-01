@@ -9,8 +9,9 @@
 <body>
 
     <header class="encabezado">
-        <h1>Tabla del 3</h1>
-        <button type="button" class="btn-probar">PROBAR</button>
+        <h1>Tabla del</h1>
+        <input type="text" id="txtValor">
+        <button type="button" class="btn-probar" onclick="ejecutarGenerarTablas()" >PROBAR</button>
     </header>
 
     <main class="contenedor">
@@ -21,17 +22,8 @@
                     <th>Resultado</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr><td>3 × 1</td><td>3</td></tr>
-                <tr><td>3 × 2</td><td>6</td></tr>
-                <tr><td>3 × 3</td><td>9</td></tr>
-                <tr><td>3 × 4</td><td>12</td></tr>
-                <tr><td>3 × 5</td><td>15</td></tr>
-                <tr><td>3 × 6</td><td>18</td></tr>
-                <tr><td>3 × 7</td><td>21</td></tr>
-                <tr><td>3 × 8</td><td>24</td></tr>
-                <tr><td>3 × 9</td><td>27</td></tr>
-                <tr><td>3 × 10</td><td>30</td></tr>
+            <tbody id="tblMultiplicar">
+                
             </tbody>
         </table>
     </main>
@@ -40,5 +32,6 @@
         <p>&copy; 2026 — Desarrollado por MEOT</p>
     </footer>
 
+    <script src="multiplicar.js"></script>
 </body>
 </html>
