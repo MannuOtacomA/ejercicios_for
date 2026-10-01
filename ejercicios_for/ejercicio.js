@@ -5,6 +5,19 @@ function listarNumeros(){
 }
 
 function ejcutar(nro){
+   switch(nro){
+    case 1: listarNumeros();
+        break
+    case 2: listarReversa();
+        break
+    case 3: listarPares();
+        break
+    case 4: listarImpares();
+        break
+   }   
+}
+
+function ejcutar_if(nro){
     if(nro == 1){
         listarNumeros();
     }else if(nro==2){
@@ -13,8 +26,7 @@ function ejcutar(nro){
         listarPares();
     }else if(nro==4){
         listarImpares();
-    }
-    
+    }    
 }
 
 
