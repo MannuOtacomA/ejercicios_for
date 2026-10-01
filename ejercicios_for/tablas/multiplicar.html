@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla del 3</title>
+    <meta name="description" content="Generador de tablas de multiplicar - Ingresa un número y obtén su tabla completa">
+    <title>Generador de Tablas de Multiplicar</title>
     <link rel="stylesheet" href="multiplicar.css">
 </head>
 <body>
 
     <header class="encabezado">
-        <h1>Tabla del</h1>
-        <input type="text" id="txtValor">
-        <button type="button" class="btn-probar" onclick="ejecutarGenerarTablas()" >PROBAR</button>
+        <h1>🧮 Generador de Tablas</h1>
+        <input 
+            type="text" 
+            id="txtValor" 
+            placeholder="Escribe un número (ej: 3, 5, 7...)"
+            aria-label="Ingresa el número para generar su tabla de multiplicar"
+            title="Escribe el número del cual quieres ver su tabla de multiplicar"
+        >
+        <button 
+            type="button" 
+            class="btn-probar" 
+            onclick="ejecutarGenerarTablas()"
+            aria-label="Generar la tabla de multiplicar del número ingresado"
+            title="Haz clic aquí para ver la tabla del número que escribiste"
+        >
+            ✔ PROBAR
+        </button>
     </header>
 
+
     <main class="contenedor">
-        <table class="tabla-multiplicar">
+        <table class="tabla-multiplicar" aria-label="Tabla de multiplicar generada">
+            <caption class="sr-only">Resultados de la tabla de multiplicar</caption>
             <thead>
                 <tr>
-                    <th>Operación</th>
-                    <th>Resultado</th>
+                    <th scope="col">Operación</th>
+                    <th scope="col">Resultado</th>
                 </tr>
             </thead>
             <tbody id="tblMultiplicar">
@@ -27,6 +44,11 @@
             </tbody>
         </table>
     </main>
+
+    <!-- Mensaje motivacional -->
+    <section class="mensaje-final">
+        <p>💡 <strong>Consejo:</strong> Practica con diferentes números para dominar todas las tablas de multiplicar.</p>
+    </section>
 
     <footer class="pie">
         <p>&copy; 2026 — Desarrollado por MEOT</p>
