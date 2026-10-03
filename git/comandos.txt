@@ -1,0 +1,30 @@
+pwd - ruta donde estamos
+
+ls - lista docuemntos
+
+cd - para acceder a directorio
+
+cd.. salir de directorio
+
+cd "carpeta 1" - para acceder a carpeta con nombre con espacios
+
+git config --global user.name MannuOtacomA
+
+git config --global user.name manuel.otacoma@gmail.com
+
+git config --global --list
+
+//para conectar carpeta del pc con git web//
+click derecho propiedades, abrir con gitbash/ 
+git clone https://github.com/MannuOtacomA
+
+
+//para agregar archivos al git web q fueron cargados en la carpeta
+git status
+git add
+
+git commit  -m  "texto descripcion"
+
+
+//suir archivos a git
+git git push --set-upstream origin main 
